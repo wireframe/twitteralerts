@@ -57,3 +57,166 @@ Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:25:16) [GET]
 Rendering template within layouts/application
 Rendering flash/index
 Completed in 48ms (View: 39, DB: 0) | 200 OK [http://localhost/flash/]
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:26:29) [GET]
+Rendering template within layouts/application
+Rendering flash/index
+
+ActionView::TemplateError (undefined local variable or method `notice_flash_path' for #<ActionView::Base:0x2221670>) on line #42 of app/views/layouts/application.html.haml:
+39:       %div{:class => "alert  #{'warning' if flash[:warning]}", :style => 'display: none'}
+40:         = flash[:notice] || flash[:warning]
+41:     = yield
+42:     = link_to 'Click here to flash a notice message', notice_flash_path
+43:     = link_to 'Click here to flash a warning message', warn_flash_path
+
+    app/views/layouts/application.html.haml:42:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (2.2.5) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.5) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.5) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (81.1ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:27:03) [GET]
+Rendering template within layouts/application
+Rendering flash/index
+Completed in 43ms (View: 35, DB: 0) | 200 OK [http://localhost/flash/]
+
+
+Processing FlashController#warn (for 127.0.0.1 at 2009-10-03 18:27:36) [GET]
+
+ActionView::MissingTemplate (Missing template flash/warn.erb in view path app/views):
+  haml (2.2.5) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FlashController#warn (for 127.0.0.1 at 2009-10-03 18:27:54) [GET]
+Rendering template within layouts/application
+Rendering flash/warn
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://localhost/flash/warn]
+
+
+Processing FlashController#warn (for 127.0.0.1 at 2009-10-03 18:27:58) [GET]
+Rendering template within layouts/application
+Rendering flash/warn
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/warn]
+
+
+Processing FlashController#warn (for 127.0.0.1 at 2009-10-03 18:28:52) [GET]
+
+ActionController::UnknownAction (No action responded to warn. Actions: notice and warning):
+  haml (2.2.5) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FlashController#warning (for 127.0.0.1 at 2009-10-03 18:28:55) [GET]
+Rendering template within layouts/application
+Rendering flash/warning
+Completed in 55ms (View: 47, DB: 0) | 200 OK [http://localhost/flash/warning]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:29:01) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:29:06) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:29:11) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#warning (for 127.0.0.1 at 2009-10-03 18:29:15) [GET]
+Rendering template within layouts/application
+Rendering flash/warning
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/warning]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:29:20) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 20ms (View: 6, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:29:24) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:29:28) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#warning (for 127.0.0.1 at 2009-10-03 18:29:32) [GET]
+Rendering template within layouts/application
+Rendering flash/warning
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/flash/warning]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:29:37) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:30:58) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#warning (for 127.0.0.1 at 2009-10-03 18:31:02) [GET]
+Rendering template within layouts/application
+Rendering flash/warning
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/warning]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:31:06) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:31:31) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 43ms (View: 35, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:31:41) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#warning (for 127.0.0.1 at 2009-10-03 18:31:43) [GET]
+Rendering template within layouts/application
+Rendering flash/warning
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/flash/warning]
+
+
+Processing FlashController#warning (for 127.0.0.1 at 2009-10-03 18:31:43) [GET]
+Rendering template within layouts/application
+Rendering flash/warning
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/flash/warning]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:31:44) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]

@@ -38,4 +38,7 @@
     - if flash[:notice] || flash[:warning]
       %div{:class => "alert  #{'warning' if flash[:warning]}", :style => 'display: none'}
         = flash[:notice] || flash[:warning]
+    %h1 Welcome to the Twitter Alert Demo
     = yield
+    = link_to 'Click here to flash a notice message', :controller => :flash, :action => :notice
+    = link_to 'Click here to flash a warning message', :controller => :flash, :action => :warning

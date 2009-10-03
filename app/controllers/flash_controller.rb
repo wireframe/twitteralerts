@@ -1,8 +1,8 @@
 class FlashController < ApplicationController
-  def index
-    flash[:notice] = 'hello world'
+  def notice
+    flash.now[:notice] = 'hello world'
   end
-  def warn
-    flash[:warn] = 'hello world'
+  def warning
+    flash.now[:warning] = 'hello world'
   end
 end
