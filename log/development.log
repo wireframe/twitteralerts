@@ -220,3 +220,21 @@ Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:31:44) [GET]
 Rendering template within layouts/application
 Rendering flash/notice
 Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/flash/notice]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:32:48) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FlashController#warning (for 127.0.0.1 at 2009-10-03 18:32:52) [GET]
+Rendering template within layouts/application
+Rendering flash/warning
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/flash/warning]
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:32:55) [GET]
+Rendering template within layouts/application
+Rendering flash/notice
+Completed in 20ms (View: 6, DB: 0) | 200 OK [http://localhost/]
