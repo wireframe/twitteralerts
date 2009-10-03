@@ -1,0 +1,59 @@
+
+
+Processing FlashController#notice (for 127.0.0.1 at 2009-10-03 18:12:05) [GET]
+
+ActionView::MissingTemplate (Missing template flash/notice.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:13:25) [GET]
+
+ActionView::MissingTemplate (Missing template flash/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:13:57) [GET]
+
+ActionView::MissingTemplate (Missing template flash/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:14:10) [GET]
+Rendering flash/index
+Completed in 78ms (View: 70, DB: 0) | 200 OK [http://localhost/flash/]
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:19:28) [GET]
+Rendering template within layouts/application
+Rendering flash/index
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://localhost/flash/]
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:19:46) [GET]
+Rendering template within layouts/application
+Rendering flash/index
+Completed in 18ms (View: 4, DB: 0) | 200 OK [http://localhost/flash/]
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:22:26) [GET]
+Rendering template within layouts/application
+Rendering flash/index
+Completed in 36ms (View: 28, DB: 0) | 200 OK [http://localhost/flash/]
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:24:55) [GET]
+Rendering template within layouts/application
+Rendering flash/index
+Completed in 36ms (View: 28, DB: 0) | 200 OK [http://localhost/flash/]
+
+
+Processing FlashController#index (for 127.0.0.1 at 2009-10-03 18:25:16) [GET]
+Rendering template within layouts/application
+Rendering flash/index
+Completed in 48ms (View: 39, DB: 0) | 200 OK [http://localhost/flash/]

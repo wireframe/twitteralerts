@@ -1,0 +1,41 @@
+%html
+  %head
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"
+    :javascript
+      //similar to http://briancray.com/2009/05/06/twitter-style-alert-jquery-cs-php/
+      $(function () {
+        var alert = $('.alert');
+        if (alert.length > 0) {
+          alert.show().animate({height: alert.outerHeight()}, 200);
+
+          window.setTimeout(function() {
+            alert.slideUp();
+          }, 3000);
+        }
+      });
+
+    %style{:type => 'text/css'}
+      :sass
+        .alert
+          :overflow hidden
+          :z-index 999
+          :width 100%
+          :text-align center
+          :position absolute
+          :top 0
+          :left 0
+          :background-color rgb(161,195,0)
+          :background-color rgba(161,195,0,.8)
+          :height 0
+          :color #fff  
+          :padding 9px 0
+          :text-shadow rgba(99,130,0,.75) 1px 1px 1px
+          :font-size 21px
+          &.warning
+            :background-color #800
+
+  %body
+    - if flash[:notice] || flash[:warning]
+      %div{:class => "alert  #{'warning' if flash[:warning]}", :style => 'display: none'}
+        = flash[:notice] || flash[:warning]
+    = yield
